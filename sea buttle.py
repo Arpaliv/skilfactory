@@ -156,7 +156,7 @@ class Ai(Player):
                             try:
                                 if self.enemy_field.dots[i + n[0]][j + n[1]] == '!':
                                     var.append((i, j))
-                                    if self.enemy_field.dots[i + n[0]][j + n[1]] == '1':
+                                    if self.enemy_field.dots[i + 2 * n[0]][j + 2 * n[1]] == '1':
                                         b_var.append((i, j))
                             except IndexError:
                                 pass
